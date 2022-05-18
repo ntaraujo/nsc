@@ -21,8 +21,8 @@ Sub AprovaçãoN2()
 '
 ' AprovaçãoN2 Macro
 '
-    Sheets("SPOT_2022").Select
     Application.CutCopyMode = False
+    Sheets("SPOT_2022").Select
     If ActiveSheet.AutoFilterMode Then ActiveSheet.AutoFilter.ShowAllData
     ActiveSheet.Range("$A$2:$XFC$400").AutoFilter Field:=8, Criteria1:="N2"
     Range("E3:E400").Select
@@ -65,8 +65,8 @@ Sub AprovaçãoNBSSâmmya()
 '
 ' AprovaçãoNBS Macro
 '
-    Sheets("SPOT_2022").Select
     Application.CutCopyMode = False
+    Sheets("SPOT_2022").Select
     If ActiveSheet.AutoFilterMode Then ActiveSheet.AutoFilter.ShowAllData
     ActiveSheet.Range("$A$2:$XFC$400").AutoFilter Field:=5, Criteria1:="<>DEPÓSITO"
     ActiveSheet.Range("$A$2:$XFC$400").AutoFilter Field:=8, Criteria1:="NBS"
@@ -111,8 +111,8 @@ Sub AprovaçãoNBSWagner()
 '
 ' AprovaçãoNBS Macro
 '
-    Sheets("SPOT_2022").Select
     Application.CutCopyMode = False
+    Sheets("SPOT_2022").Select
     If ActiveSheet.AutoFilterMode Then ActiveSheet.AutoFilter.ShowAllData
     ActiveSheet.Range("$A$2:$XFC$400").AutoFilter Field:=5, Criteria1:="DEPÓSITO"
     ActiveSheet.Range("$A$2:$XFC$400").AutoFilter Field:=8, Criteria1:="NBS"
@@ -159,6 +159,7 @@ Sub Aprovação()
 '
 ' Atalho do teclado: Ctrl+q
 '
+    Application.CutCopyMode = False
     Sheets("Ajudador1").Cells.Copy
     Sheets("APROVAÇÃO").Select
     Cells.Select
@@ -166,7 +167,6 @@ Sub Aprovação()
     ActiveSheet.Paste
 
     Range("A97:D97").Select
-    Application.CutCopyMode = False
     Selection.Copy
     If WorksheetFunction.CountA(Selection) <> 0 Then
         Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
