@@ -146,9 +146,14 @@ Sub Aprovação()
     Selection.Copy
     Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
         :=False, Transpose:=False
+    
+    Dim myAnswer As Variant
 
-    Call AprovaçãoN2
-    Call AprovaçãoNBSSâmmya
-    Call AprovaçãoNBSWagner
+    myAnswer = MsgBox("Checar N2?", vbYesNo, "Macro de Aprovações")
+    If myAnswer = vbYes Then Call AprovaçãoN2
+    myAnswer = MsgBox("Checar NBS da Sâmmya?", vbYesNo, "Macro de Aprovações")
+    If myAnswer = vbYes Then Call AprovaçãoNBSSâmmya
+    myAnswer = MsgBox("Checar NBS do Wagner?", vbYesNo, "Macro de Aprovações")
+    If myAnswer = vbYes Then Call AprovaçãoNBSWagner
 End Sub
 
