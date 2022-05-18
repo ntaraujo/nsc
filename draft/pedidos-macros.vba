@@ -27,34 +27,39 @@ Sub AprovaçãoN2()
     ActiveSheet.Range("$A$2:$XFC$400").AutoFilter Field:=8, Criteria1:="N2"
     Range("E3:E400").Select
     Selection.Copy
-    Sheets("APROVAÇÃO").Select
-    Range("A4").Select
-    Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
-        :=False, Transpose:=False
+    If WorksheetFunction.CountA(Selection) <> 0 Then
+        Sheets("APROVAÇÃO").Select
+        Range("A4").Select
+        Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
+            :=False, Transpose:=False
+    End If
     Sheets("SPOT_2022").Select
     Range("U3:U400").Select
-    Application.CutCopyMode = False
     Selection.Copy
-    Sheets("APROVAÇÃO").Select
-    Range("B4").Select
-    Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
-        :=False, Transpose:=False
+    If WorksheetFunction.CountA(Selection) <> 0 Then
+        Sheets("APROVAÇÃO").Select
+        Range("B4").Select
+        Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
+            :=False, Transpose:=False
+    End If
     Sheets("SPOT_2022").Select
     Range("F3:F400").Select
-    Application.CutCopyMode = False
     Selection.Copy
-    Sheets("APROVAÇÃO").Select
-    Range("C4").Select
-    Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
-        :=False, Transpose:=False
+    If WorksheetFunction.CountA(Selection) <> 0 Then
+        Sheets("APROVAÇÃO").Select
+        Range("C4").Select
+        Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
+            :=False, Transpose:=False
+    End If
     Sheets("SPOT_2022").Select
     Range("P3:P400").Select
-    Application.CutCopyMode = False
     Selection.Copy
-    Sheets("APROVAÇÃO").Select
-    Range("D4").Select
-    Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
-        :=False, Transpose:=False
+    If WorksheetFunction.CountA(Selection) <> 0 Then
+        Sheets("APROVAÇÃO").Select
+        Range("D4").Select
+        Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
+            :=False, Transpose:=False
+    End If
 End Sub
 Sub AprovaçãoNBSSâmmya()
 '
@@ -68,34 +73,39 @@ Sub AprovaçãoNBSSâmmya()
     ActiveSheet.Range("$A$2:$XFC$400").AutoFilter Field:=9, Criteria1:="<>"
     Range("E3:E400").Select
     Selection.Copy
-    Sheets("APROVAÇÃO").Select
-    Range("A36").Select
-    Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
-        :=False, Transpose:=False
+    If WorksheetFunction.CountA(Selection) <> 0 Then
+        Sheets("APROVAÇÃO").Select
+        Range("A36").Select
+        Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
+            :=False, Transpose:=False
+    End If
     Sheets("SPOT_2022").Select
     Range("I3:I400").Select
-    Application.CutCopyMode = False
     Selection.Copy
-    Sheets("APROVAÇÃO").Select
-    Range("B36").Select
-    Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
-        :=False, Transpose:=False
+    If WorksheetFunction.CountA(Selection) <> 0 Then
+        Sheets("APROVAÇÃO").Select
+        Range("B36").Select
+        Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
+            :=False, Transpose:=False
+    End If
     Sheets("SPOT_2022").Select
     Range("F3:F400").Select
-    Application.CutCopyMode = False
     Selection.Copy
-    Sheets("APROVAÇÃO").Select
-    Range("C36").Select
-    Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
-        :=False, Transpose:=False
+    If WorksheetFunction.CountA(Selection) <> 0 Then
+        Sheets("APROVAÇÃO").Select
+        Range("C36").Select
+        Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
+            :=False, Transpose:=False
+    End If
     Sheets("SPOT_2022").Select
     Range("P3:P400").Select
-    Application.CutCopyMode = False
     Selection.Copy
-    Sheets("APROVAÇÃO").Select
-    Range("D36").Select
-    Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
-        :=False, Transpose:=False
+    If WorksheetFunction.CountA(Selection) <> 0 Then
+        Sheets("APROVAÇÃO").Select
+        Range("D36").Select
+        Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
+            :=False, Transpose:=False
+    End If
 End Sub
 Sub AprovaçãoNBSWagner()
 '
@@ -109,34 +119,39 @@ Sub AprovaçãoNBSWagner()
     ActiveSheet.Range("$A$2:$XFC$400").AutoFilter Field:=9, Criteria1:="<>"
     Range("E3:E400").Select
     Selection.Copy
-    Sheets("APROVAÇÃO").Select
-    Range("A67").Select
-    Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
-        :=False, Transpose:=False
+    If WorksheetFunction.CountA(Selection) <> 0 Then
+        Sheets("APROVAÇÃO").Select
+        Range("A67").Select
+        Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
+            :=False, Transpose:=False
+    End If
     Sheets("SPOT_2022").Select
     Range("I3:I400").Select
-    Application.CutCopyMode = False
     Selection.Copy
-    Sheets("APROVAÇÃO").Select
-    Range("B67").Select
-    Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
-        :=False, Transpose:=False
+    If WorksheetFunction.CountA(Selection) <> 0 Then
+        Sheets("APROVAÇÃO").Select
+        Range("B67").Select
+        Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
+            :=False, Transpose:=False
+    End If
     Sheets("SPOT_2022").Select
     Range("F3:F400").Select
-    Application.CutCopyMode = False
     Selection.Copy
-    Sheets("APROVAÇÃO").Select
-    Range("C67").Select
-    Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
-        :=False, Transpose:=False
+    If WorksheetFunction.CountA(Selection) <> 0 Then
+        Sheets("APROVAÇÃO").Select
+        Range("C67").Select
+        Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
+            :=False, Transpose:=False
+    End If
     Sheets("SPOT_2022").Select
     Range("P3:P400").Select
-    Application.CutCopyMode = False
     Selection.Copy
-    Sheets("APROVAÇÃO").Select
-    Range("D67").Select
-    Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
-        :=False, Transpose:=False
+    If WorksheetFunction.CountA(Selection) <> 0 Then
+        Sheets("APROVAÇÃO").Select
+        Range("D67").Select
+        Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
+            :=False, Transpose:=False
+    End If
 End Sub
 Sub Aprovação()
 '
@@ -153,11 +168,11 @@ Sub Aprovação()
     Range("A97:D97").Select
     Application.CutCopyMode = False
     Selection.Copy
-    Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
-        :=False, Transpose:=False
-
+    If WorksheetFunction.CountA(Selection) <> 0 Then
+        Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
+            :=False, Transpose:=False
+    End IF
     Call AprovaçãoN2
     Call AprovaçãoNBSSâmmya
     Call AprovaçãoNBSWagner
 End Sub
-
