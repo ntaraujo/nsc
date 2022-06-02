@@ -5,6 +5,8 @@ Sub AprovaçãoN2()
     Application.CutCopyMode = False
     Sheets("SPOT_2022").Select
     If ActiveSheet.AutoFilterMode Then ActiveSheet.AutoFilter.ShowAllData
+    Cells.EntireColumn.Hidden = False
+
     ActiveSheet.Range("$A$2:$XFC$400").AutoFilter Field:=8, Criteria1:="N2"
     Range("E3:E400").Select
     Selection.Copy
@@ -48,6 +50,8 @@ Sub AprovaçãoNBS()
     Application.CutCopyMode = False
     Sheets("SPOT_2022").Select
     If ActiveSheet.AutoFilterMode Then ActiveSheet.AutoFilter.ShowAllData
+    Cells.EntireColumn.Hidden = False
+
     ActiveSheet.Range("$A$2:$XFC$400").AutoFilter Field:=8, Criteria1:="NBS"
     ActiveSheet.Range("$A$2:$XFC$400").AutoFilter Field:=9, Criteria1:="<>"
     Range("E3:E400").Select
