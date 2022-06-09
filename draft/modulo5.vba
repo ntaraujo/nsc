@@ -37,10 +37,17 @@ Sub AprovaçãoN1()
     Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
         :=False, Transpose:=False
     Sheets("SPOT_2022").Select
-    Range("T3:T400").Select
+    Range("AH3:AH400").Select
     Selection.Copy
     Sheets("APROVAÇÃO").Select
     Range("E3").Select
+    Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
+        :=False, Transpose:=False
+    Sheets("SPOT_2022").Select
+    Range("T3:T400").Select
+    Selection.Copy
+    Sheets("APROVAÇÃO").Select
+    Range("F3").Select
     Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
         :=False, Transpose:=False
 End Sub
@@ -82,10 +89,17 @@ Sub AprovaçãoN2()
     Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
         :=False, Transpose:=False
     Sheets("SPOT_2022").Select
-    Range("T3:T400").Select
+    Range("AH3:AH400").Select
     Selection.Copy
     Sheets("APROVAÇÃO").Select
     Range("E35").Select
+    Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
+        :=False, Transpose:=False
+    Sheets("SPOT_2022").Select
+    Range("T3:T400").Select
+    Selection.Copy
+    Sheets("APROVAÇÃO").Select
+    Range("F35").Select
     Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
         :=False, Transpose:=False
 End Sub
@@ -133,6 +147,13 @@ Sub AprovaçãoNBS()
     Selection.Copy
     Sheets("APROVAÇÃO").Select
     Range("E67").Select
+    Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
+        :=False, Transpose:=False
+    Sheets("SPOT_2022").Select
+    Range("T3:T400").Select
+    Selection.Copy
+    Sheets("APROVAÇÃO").Select
+    Range("F67").Select
     Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
         :=False, Transpose:=False
 End Sub
