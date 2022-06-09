@@ -170,7 +170,7 @@ Sub Aprovação()
     Range("A1").Activate
     ActiveSheet.Paste
 
-    Range("A66:E66").Select
+    Range("A66:G66").Select
     Selection.Copy
     Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
         :=False, Transpose:=False
