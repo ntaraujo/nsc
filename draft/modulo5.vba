@@ -54,7 +54,7 @@ Sub AprovaçãoN2()
     Cells.EntireColumn.Hidden = False
 
     ActiveSheet.Range("$A$2:$XFC$400").AutoFilter Field:=8, Criteria1:="N2"
-    Range("E3:E400").Select
+    Range("AI3:AI400").Select
     Selection.Copy
     Sheets("APROVAÇÃO").Select
     Range("A35").Select
@@ -101,7 +101,7 @@ Sub AprovaçãoNBS()
     ActiveSheet.Range("$A$2:$XFC$400").AutoFilter Field:=8, Criteria1:="NBS"
     ActiveSheet.Range("$A$2:$XFC$400").AutoFilter Field:=9, Criteria1:="<>"
     ActiveSheet.Range("$A$2:$XFC$400").AutoFilter Field:=7, Operator:=xlFilterNoFill
-    Range("E3:E400").Select
+    Range("AI3:AI400").Select
     Selection.Copy
     Sheets("APROVAÇÃO").Select
     Range("A67").Select
