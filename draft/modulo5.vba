@@ -143,7 +143,7 @@ Sub Aprovação()
 ' Atalho do teclado: Ctrl+q
 '
     Application.CutCopyMode = False
-    Sheets("Ajudador3").Cells.Copy
+    Sheets("Ajudador4").Cells.Copy
     Sheets("APROVAÇÃO").Select
     Cells.Select
     Range("A1").Activate
